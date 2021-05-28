@@ -1,8 +1,15 @@
+var canvas; 
+
+function windowResized(){
+	resizeCanvas(windowWidth,windowHeight, WEBGL);
+}
 
 function setup() {
-	let canvas =createCanvas(1500, 600, WEBGL);
-	canvas.parent('sketch-container');
+	canvas = createCanvas(windowWidth,windowHeight, WEBGL);
+	canvas.position(0,0);
+	canvas.style('z-index', '-1');
 }
+
 let size = 0
 function draw() {
 background(181, 178, 232);
@@ -56,3 +63,11 @@ sphere(20);
 		}}
 	pop();
 }
+
+// function animate() {
+// 	requestAnimationFrame(animate);
+// 	c.clearRect(0, 0, window.innerWidth, window.innerHeight);
+// };
+
+
+// animate();
