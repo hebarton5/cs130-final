@@ -12,7 +12,7 @@ function setup() {
 
 let size = 0
 function draw() {
-background(181, 178, 232);
+background(178, 192, 232);
 frameRate(30);
 push();
 fill(139, 216, 148, 100);
